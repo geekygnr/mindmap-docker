@@ -2,7 +2,8 @@
  
  services:
   arangodb:
-    hostname: arangodb
+    hostname: mindmap
+    container_name: mindmap
     image: arangodb/arangodb
     ports:
       - 8529:8529
@@ -11,3 +12,4 @@
       - ./apps:/var/lib/arangodb3-apps
     environment:
       ARANGO_NO_AUTH: 1
+    network_mode: "host"
