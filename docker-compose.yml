@@ -1,10 +1,10 @@
- version: '3'
+version: '3'
  
- services:
+services:
   arangodb:
     hostname: mindmap
     container_name: mindmap
-    image: arangodb/arangodb
+    image: arangodb:latest
     ports:
       - 8529:8529
     volumes:
